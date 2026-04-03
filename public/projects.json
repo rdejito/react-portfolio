@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "description": " simple react quiz app that is data persistent using local storage, shuffled questions, and also functional tabs made using React JS + Vite.",
+    "name": "Simple Quiz App"
+  },
+  {
+    "id": 2,
+    "description": "A simple to-do list app using React JS.",
+    "name": "To-Do App"
+  },
+  {
+    "id": 3,
+    "description": "A stock app created in React with stock API, third-party authentication (Clerk Auth), and database (Supabase).",
+    "name": "Stock App"
+  }
+]

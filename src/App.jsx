@@ -23,12 +23,19 @@ function App() {
   }, [activeTab]);
 
   const [stacks, setStacks] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     fetch("stacks.json")
       .then((response) => response.json())
       .then((data) => setStacks(data));
   }, []);
+
+  useEffect(() => {
+    fetch("projects.json")
+      .then((response) => response.json())
+      .then((data) => setProjects(data));
+  }, [projects]);
 
   return (
     <div>
@@ -56,7 +63,7 @@ function App() {
         <div>
           {activeTab === "home" && <Home />}
           {activeTab === "about" && <About stacks={stacks} />}
-          {activeTab === "projects" && <Projects />}
+          {activeTab === "projects" && <Projects projects={projects} />}
           {activeTab === "contacts" && <Contacts />}
         </div>
       </main>
