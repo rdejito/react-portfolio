@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "label": "html",
+    "image": "html.png"
+  },
+  {
+    "id": 2,
+    "label": "css",
+    "image": "css.png"
+  },
+  {
+    "id": 3,
+    "label": "js",
+    "image": "js.png"
+  },
+  {
+    "id": 4,
+    "label": "react",
+    "image": "reactjs.png"
+  }
+]
