@@ -9,10 +9,8 @@ function Home() {
           <h2>Hi, I'm Rainiel</h2>
           <p>Computer Engineering Technology Student</p>
           <div className="btn-wrapper">
-            <div className="btn-inner">
-              <button className="hollow-btn">Projects</button>
-              <button className="block-btn">Download CV</button>
-            </div>
+              <button className="home-btn hollow-btn">Projects</button>
+              <button className="home-btn block-btn">Download CV</button>
           </div>
         </div>
       </div>

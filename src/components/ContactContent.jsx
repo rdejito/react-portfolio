@@ -1,7 +1,7 @@
 function ContactContent({ contact }) {
   return (
     <div key={contact.id}>
-      <img src="#" alt={contact.type} />
+      <img src={`contacts/${contact.type}.png`} alt={contact.type} />
       <p>{contact.content}</p>
     </div>
   );

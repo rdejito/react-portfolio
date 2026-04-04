@@ -15,7 +15,7 @@ const TABS = [
 
 function App() {
   const [activeTab, setActiveTab] = useState(() => {
-    return localStorage.getItem("ACTIVE_TAB");
+    return localStorage.getItem("ACTIVE_TAB") || "home";
   });
 
   useEffect(() => {
@@ -27,22 +27,22 @@ function App() {
   const [contacts, setContacts] = useState([]);
 
   useEffect(() => {
-    fetch("stacks.json")
+    fetch("/datas/stacks.json")
       .then((response) => response.json())
       .then((data) => setStacks(data));
-  }, [stacks]);
+  }, []);
 
   useEffect(() => {
-    fetch("projects.json")
+    fetch("/datas/projects.json")
       .then((response) => response.json())
       .then((data) => setProjects(data));
-  }, [projects]);
+  }, []);
 
   useEffect(() => {
-    fetch("contacts.json")
+    fetch("/datas/contacts.json")
       .then((response) => response.json())
       .then((data) => setContacts(data));
-  }, [contacts]);
+  }, []);
 
   return (
     <div>

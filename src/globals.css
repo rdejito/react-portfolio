@@ -110,6 +110,51 @@ body {
   max-width: 100%;
 }
 
+.btn-wrapper {
+  margin-top: 60px;
+  display: flex;
+  gap: 30px;
+}
+
+.home-btn {
+  font-size: 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hollow-btn {
+  background: transparent;
+  color: hsl(253, 96%, 68%);
+  border: 2px solid hsl(253, 96%, 68%);
+}
+
+.hollow-btn:hover {
+  background-color: #5754e9;
+  color: #eeeeee;
+  border: 2px solid hsl(0, 0%, 96%);
+}
+
+.hollow-btn:active {
+  background-color: #4745bd;
+}
+
+.block-btn {
+  background-color: #5754e9;
+  color: #eeeeee;
+  border: 2px solid #5754e9;
+  transition: border 0.2s ease-in;
+}
+
+.block-btn:hover {
+  border: 2px solid #eeeeee;
+}
+
+.block-btn:active {
+  background-color: #4846c0;
+}
+
 /* ABOUT TAB */
 .about-tab {
   padding-top: 50px;
@@ -134,9 +179,8 @@ body {
 
 .contact-line {
   background: var(--text-h);
-  height: 2px;
+  height: 1px;
   width: 40%;
-  border: 1px solid #fff;
 }
 
 /* FOOTER TAB */
