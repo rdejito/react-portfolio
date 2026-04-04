@@ -24,18 +24,25 @@ function App() {
 
   const [stacks, setStacks] = useState([]);
   const [projects, setProjects] = useState([]);
+  const [contacts, setContacts] = useState([]);
 
   useEffect(() => {
     fetch("stacks.json")
       .then((response) => response.json())
       .then((data) => setStacks(data));
-  }, []);
+  }, [stacks]);
 
   useEffect(() => {
     fetch("projects.json")
       .then((response) => response.json())
       .then((data) => setProjects(data));
   }, [projects]);
+
+  useEffect(() => {
+    fetch("contacts.json")
+      .then((response) => response.json())
+      .then((data) => setContacts(data));
+  }, [contacts]);
 
   return (
     <div>
@@ -64,7 +71,7 @@ function App() {
           {activeTab === "home" && <Home />}
           {activeTab === "about" && <About stacks={stacks} />}
           {activeTab === "projects" && <Projects projects={projects} />}
-          {activeTab === "contacts" && <Contacts />}
+          {activeTab === "contacts" && <Contacts contacts={contacts} />}
         </div>
       </main>
       <Footer />

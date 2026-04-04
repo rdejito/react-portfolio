@@ -126,6 +126,19 @@ body {
   padding-top: 50px;
 }
 
+.contact-text-h {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-line {
+  background: var(--text-h);
+  height: 2px;
+  width: 40%;
+  border: 1px solid #fff;
+}
+
 /* FOOTER TAB */
 .footer {
   min-height: 20px;
