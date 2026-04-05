@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "year": "Current",
+    "program": "2nd Year - Dipl. in Comp. Eng. Technology",
+    "school": "CITE Technical Institute Inc.",
+    "address": "San Jose, Cebu City"
+  },
+  {
+    "id": 2,
+    "year": "2024",
+    "program": "SHS - GAS-STEM",
+    "school": "Alcoy National High School",
+    "address": "Poblacion, Alcoy, Cebu"
+  }
+]

@@ -25,6 +25,7 @@ function App() {
   const [stacks, setStacks] = useState([]);
   const [projects, setProjects] = useState([]);
   const [contacts, setContacts] = useState([]);
+  const [educations, setEducations] = useState([]);
 
   useEffect(() => {
     fetch("/datas/stacks.json")
@@ -42,6 +43,12 @@ function App() {
     fetch("/datas/contacts.json")
       .then((response) => response.json())
       .then((data) => setContacts(data));
+  }, []);
+
+  useEffect(() => {
+    fetch("/datas/education.json")
+      .then((response) => response.json())
+      .then((data) => setEducations(data));
   }, []);
 
   return (
@@ -69,7 +76,9 @@ function App() {
       <main>
         <div>
           {activeTab === "home" && <Home />}
-          {activeTab === "about" && <About stacks={stacks} />}
+          {activeTab === "about" && (
+            <About stacks={stacks} educations={educations} />
+          )}
           {activeTab === "projects" && <Projects projects={projects} />}
           {activeTab === "contacts" && <Contacts contacts={contacts} />}
         </div>
