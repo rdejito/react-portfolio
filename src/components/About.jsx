@@ -6,16 +6,17 @@ function About({ stacks, educations }) {
     <div className="about-tab">
       <div className="about-tab-inner">
         <h2>About Me</h2>
-        <div className="about-fst-para">
+        <div className="about-tab-fst-box">
           <h3>Education</h3>
-          <div>
+
+          <div className="wrapper">
             {educations.map((education) => (
               <Education education={education} key={education.id} />
             ))}
           </div>
         </div>
         <div className="tech-stack-box">
-          <h3>My Tech Stack</h3>
+          <h4>My Tech Stack</h4>
           <div>
             {stacks.map((stack) => (
               <TechStack stack={stack} key={stack.id} />

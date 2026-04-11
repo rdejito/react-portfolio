@@ -1,6 +1,6 @@
 function Education({ education }) {
   return (
-    <div>
+    <div className="education-wrapper">
       <p>
         <strong>{education.school}</strong>
         {` · ${education.year}`}
