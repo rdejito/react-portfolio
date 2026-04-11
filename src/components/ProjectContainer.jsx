@@ -1,9 +1,12 @@
 function ProjectContainer({ project }) {
   return (
-    <div>
+    <>
       <img src={`projects/${project.image}.png`} alt={`${project.name}`} />
-      <p>{project.description}</p>
-    </div>
+      <div className="text-container">
+        <p>{project.name}</p>
+        <p>{project.description}</p>
+      </div>
+    </>
   );
 }
 

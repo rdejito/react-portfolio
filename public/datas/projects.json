@@ -2,7 +2,7 @@
   {
     "id": 1,
     "image": "to-do",
-    "description": " simple react quiz app that is data persistent using local storage, shuffled questions, and also functional tabs made using React JS + Vite.",
+    "description": "A simple react quiz app that is data persistent using local storage, shuffled questions, and also functional tabs made using React JS + Vite.",
     "name": "Simple Quiz App"
   },
   {
