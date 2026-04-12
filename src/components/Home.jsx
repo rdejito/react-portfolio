@@ -1,4 +1,4 @@
-function Home() {
+function Home({ setActiveTab }) {
   return (
     <div className="home-tab">
       <div className="home-tab-inner">
@@ -9,8 +9,18 @@ function Home() {
           <h2>Hi, I'm Rainiel</h2>
           <p>Computer Engineering Technology Student</p>
           <div className="btn-wrapper">
-              <button className="home-btn hollow-btn">Projects</button>
-              <button className="home-btn block-btn">Download CV</button>
+            <button
+              className="home-btn hollow-btn"
+              onClick={() => setActiveTab("projects")}
+            >
+              Projects
+            </button>
+            <button
+              className="home-btn block-btn"
+              onClick={() => window.open("/cv.pdf")}
+            >
+              Download CV
+            </button>
           </div>
         </div>
       </div>

@@ -75,7 +75,7 @@ function App() {
 
       <main>
         <div>
-          {activeTab === "home" && <Home />}
+          {activeTab === "home" && <Home setActiveTab={setActiveTab} />}
           {activeTab === "about" && (
             <About stacks={stacks} educations={educations} />
           )}
