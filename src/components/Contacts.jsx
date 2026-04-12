@@ -12,7 +12,7 @@ function Contacts({ contacts }) {
         <span>*</span>
         <div className="contact-line"></div>
       </div>
-      <div>
+      <div className="links">
         {contacts.map((contact) => (
           <ContactContent contact={contact} key={contact.id} />
         ))}
